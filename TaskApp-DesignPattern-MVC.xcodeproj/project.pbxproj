@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		D58E70BD225AF79600E8B15E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70BC225AF79600E8B15E /* AppDelegate.swift */; };
-		D58E70BF225AF79600E8B15E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70BE225AF79600E8B15E /* ViewController.swift */; };
+		D58E70BF225AF79600E8B15E /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70BE225AF79600E8B15E /* TaskListViewController.swift */; };
 		D58E70C2225AF79600E8B15E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E70C0225AF79600E8B15E /* Main.storyboard */; };
 		D58E70C4225AF79A00E8B15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58E70C3225AF79A00E8B15E /* Assets.xcassets */; };
 		D58E70C7225AF79A00E8B15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E70C5225AF79A00E8B15E /* LaunchScreen.storyboard */; };
+		D58E70CF225AF7EB00E8B15E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70CE225AF7EB00E8B15E /* Task.swift */; };
+		D58E70D1225AFC8C00E8B15E /* TaskDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70D0225AFC8C00E8B15E /* TaskDataSource.swift */; };
+		D58E70D3225AFE3600E8B15E /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70D2225AFE3600E8B15E /* TaskListCell.swift */; };
+		D58E70D5225B08B900E8B15E /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70D4225B08B900E8B15E /* CreateTaskView.swift */; };
+		D58E70D7225B0B0C00E8B15E /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70D6225B0B0C00E8B15E /* CreateTaskViewController.swift */; };
+		D58E70D9225B403800E8B15E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E70D8225B403800E8B15E /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D58E70B9225AF79600E8B15E /* TaskApp-DesignPattern-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TaskApp-DesignPattern-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58E70BC225AF79600E8B15E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D58E70BE225AF79600E8B15E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D58E70BE225AF79600E8B15E /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		D58E70C1225AF79600E8B15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D58E70C3225AF79A00E8B15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58E70C6225AF79A00E8B15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D58E70C8225AF79A00E8B15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58E70CE225AF7EB00E8B15E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D58E70D0225AFC8C00E8B15E /* TaskDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataSource.swift; sourceTree = "<group>"; };
+		D58E70D2225AFE3600E8B15E /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		D58E70D4225B08B900E8B15E /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		D58E70D6225B0B0C00E8B15E /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		D58E70D8225B403800E8B15E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				D58E70BC225AF79600E8B15E /* AppDelegate.swift */,
-				D58E70BE225AF79600E8B15E /* ViewController.swift */,
+				D58E70BE225AF79600E8B15E /* TaskListViewController.swift */,
+				D58E70D4225B08B900E8B15E /* CreateTaskView.swift */,
+				D58E70D6225B0B0C00E8B15E /* CreateTaskViewController.swift */,
 				D58E70C0225AF79600E8B15E /* Main.storyboard */,
 				D58E70C3225AF79A00E8B15E /* Assets.xcassets */,
 				D58E70C5225AF79A00E8B15E /* LaunchScreen.storyboard */,
 				D58E70C8225AF79A00E8B15E /* Info.plist */,
+				D58E70CE225AF7EB00E8B15E /* Task.swift */,
+				D58E70D0225AFC8C00E8B15E /* TaskDataSource.swift */,
+				D58E70D2225AFE3600E8B15E /* TaskListCell.swift */,
+				D58E70D8225B403800E8B15E /* Logger.swift */,
 			);
 			path = "TaskApp-DesignPattern-MVC";
 			sourceTree = "<group>";
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58E70BF225AF79600E8B15E /* ViewController.swift in Sources */,
+				D58E70BF225AF79600E8B15E /* TaskListViewController.swift in Sources */,
+				D58E70D3225AFE3600E8B15E /* TaskListCell.swift in Sources */,
+				D58E70D1225AFC8C00E8B15E /* TaskDataSource.swift in Sources */,
+				D58E70CF225AF7EB00E8B15E /* Task.swift in Sources */,
 				D58E70BD225AF79600E8B15E /* AppDelegate.swift in Sources */,
+				D58E70D5225B08B900E8B15E /* CreateTaskView.swift in Sources */,
+				D58E70D7225B0B0C00E8B15E /* CreateTaskViewController.swift in Sources */,
+				D58E70D9225B403800E8B15E /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKGH3PPX4X;
 				INFOPLIST_FILE = "TaskApp-DesignPattern-MVC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKGH3PPX4X;
 				INFOPLIST_FILE = "TaskApp-DesignPattern-MVC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
