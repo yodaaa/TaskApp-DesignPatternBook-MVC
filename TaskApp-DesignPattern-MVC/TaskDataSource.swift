@@ -15,8 +15,7 @@ class TaskDataSource: NSObject {
         let userDefaults = UserDefaults.standard
         let taskDictionaries = userDefaults.object(forKey: "tasks") as? [[String: Any]]
         guard let t = taskDictionaries else { return }
-        
-        //tasks.removeAll()
+        Logger.debugLog(t)
         for dic in t {
             let task = Task(from: dic)
             Logger.debugLog(dic)
@@ -44,6 +43,7 @@ class TaskDataSource: NSObject {
     }
     
     func date(at index: Int) -> Task? {
+//      Logger.debugLog(index)
         if tasks.count > index {
             return tasks[index]
         }

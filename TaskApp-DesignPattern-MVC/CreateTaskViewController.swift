@@ -24,6 +24,8 @@ class CreateTaskViewController: UIViewController {
         /* TaskDataSource を生成。 */
         dataSource = TaskDataSource()
         
+        
+        
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

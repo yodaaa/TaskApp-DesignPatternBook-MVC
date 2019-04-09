@@ -27,6 +27,7 @@ class TaskListViewController: UIViewController {
         
         let barButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(barButtonTapped(_:)))
         navigationItem.rightBarButtonItem = barButton
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: #selector(backButtonTapped(_:)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,6 +42,12 @@ class TaskListViewController: UIViewController {
         //present(navi, animated: true, completion: nil)
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    
+    @objc func backButtonTapped(_ sender: UIBarButtonItem){
+        Logger.debugLog("OK")
+    }
+
 }
 
 extension TaskListViewController: UITableViewDelegate, UITableViewDataSource {

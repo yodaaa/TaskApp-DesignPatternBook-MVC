@@ -113,4 +113,19 @@ extension CreateTaskView: UITextFieldDelegate {
         }
         return true }
     
+    // 確実にテキストフィールドに入れた文字列をハンドリングできるように、以下を追加した
+    // キーボード閉じた後に、 CreateTaskViewController 入力文字列を伝達
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // キーボードを閉じる
+        textField.endEditing(true)
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField:UITextField){
+        if textField.tag == 0 {
+            delegate?.createView(taskEditting: self, text:
+                textField.text ?? "")// ユーザーの入力完了後の文字が入ってる
+        }
+    }
+    
 }
